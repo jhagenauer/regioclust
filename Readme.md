@@ -5,31 +5,31 @@ RegioClust is a method that combines hierarchical clustering and linear regressi
 ## Usage
 
 Usage: <main class> [options]
-  Options:
-  * -cluster
-      Number of clusters
-    -coords
-      Index of coordinates
-  * -dep
-      Index of dependent variables
-    -help
+Options:
+* -cluster
+    Number of clusters
+  -coords
+    Index of coordinates
+* -dep
+    Index of dependent variables
+  -help
 
-    -incont
-      Input contiguity matrix
-  * -indep
-      Indices of independent variables
-      Default: []
-    -indist
-      Input dist matrix
-  * -inshape
-      Input ShapeFile
-  * -minobs
-      Min. observations per cluster
-    -outshape
-      Output ShapeFile
-    -threads
-      Number of threads.
-      Default: 1
+  -incont
+    Input contiguity matrix
+* -indep
+    Indices of independent variables
+    Default: []
+  -indist
+    Input dist matrix
+* -inshape
+    Input ShapeFile
+* -minobs
+    Min. observations per cluster
+  -outshape
+    Output ShapeFile
+  -threads
+    Number of threads.
+    Default: 1
       
 ## Notes
 
