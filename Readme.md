@@ -3,34 +3,32 @@
 RegioClust is a method that combines hierarchical clustering and linear regression to identify regions with similar relationships. 
 
 ## Usage
+    Usage: <main class> [options]
+      Options:
+      * -cluster
+          Number of clusters
+        -coords
+          Index of coordinates
+      * -dep
+          Index of dependent variables
+        -help  
+        -incont
+          Input contiguity matrix
+      * -indep
+          Indices of independent variables
+          Default: []
+        -indist
+          Input dist matrix
+      * -inshape
+          Input ShapeFile
+      * -minobs
+          Min. observations per cluster
+        -outshape
+          Output ShapeFile
+        -threads
+          Number of threads.
+          Default: 1
 
-Usage: <main class> [options]
-Options:
-* -cluster
-    Number of clusters
-  -coords
-    Index of coordinates
-* -dep
-    Index of dependent variables
-  -help
-
-  -incont
-    Input contiguity matrix
-* -indep
-    Indices of independent variables
-    Default: []
-  -indist
-    Input dist matrix
-* -inshape
-    Input ShapeFile
-* -minobs
-    Min. observations per cluster
-  -outshape
-    Output ShapeFile
-  -threads
-    Number of threads.
-    Default: 1
-      
 ## Notes
 
 - Either the parameter "coords" or "indist" has to be set.
