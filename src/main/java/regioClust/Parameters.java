@@ -7,7 +7,7 @@ import com.beust.jcommander.Parameter;
 
 public class Parameters {
 	@Parameter(names = "-indep", description = "Indices of independent variables", required = true)
-	List<Integer> indep = new ArrayList<>();
+	List<Integer> indep;
 
 	@Parameter(names = "-dep", description = "Index of dependent variables", required = true)
 	Integer dep;
@@ -18,7 +18,7 @@ public class Parameters {
 	@Parameter(names = "-inshape", description = "Input ShapeFile", required = true)
 	String inshape;
 	
-	@Parameter(names = "-outshape", description = "Output ShapeFile")
+	@Parameter(names = "-outshape", description = "Output ShapeFile", required = true)
 	String outshape;
 	
 	@Parameter(names = "-indist", description = "Input dist matrix")

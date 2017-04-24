@@ -1,6 +1,6 @@
 ## Synopsis
 
-RegioClust is a method that combines hierarchical clustering and linear regression to identify regions with similar relationships 
+RegioClust is a method that combines hierarchical clustering and linear regression to identify spatial regions with similar relationships 
 
 ## Usage
     Usage: <main class> [options]
@@ -16,14 +16,13 @@ RegioClust is a method that combines hierarchical clustering and linear regressi
           Input contiguity matrix
       * -indep
           Indices of independent variables
-          Default: []
         -indist
           Input dist matrix
       * -inshape
           Input ShapeFile
       * -minobs
           Min. observations per cluster
-        -outshape
+      * -outshape
           Output ShapeFile
         -threads
           Number of threads.
@@ -33,8 +32,7 @@ RegioClust is a method that combines hierarchical clustering and linear regressi
 
 - Either the parameter "coords" or "indist" has to be set
 - Setting "coord" instead of "indist" is advisable if the distance matrix is very large
-- If you do not set the parameter "incont", RegioClust tries to derive a contiguity matrix on its own (only works for polygonal data)
-- You almost always want to define the parameter "outshape" (and probably also "coords")
+- If you do not set the parameter "incont", RegioClust tries to derive a (Queen) contiguity matrix on its own (only works for polygon data)
 - The paramter "minobs" should be reasonable large but in any case larger than the number of dependent variables plus one
 
 ## License
