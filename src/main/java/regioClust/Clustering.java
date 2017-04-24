@@ -141,18 +141,6 @@ public class Clustering {
 		}
 		return ncm;
 	}
-							
-	// not connected
-	public static List<TreeNode> getHierarchicalClusterTree(List<double[]> samples, Dist<double[]> dist, HierarchicalClusteringType type) {
-		return getHierarchicalClusterTree( samplesToTree(samples), null, dist, type);
-	}
-	
-	// connected
-	public static List<TreeNode> getHierarchicalClusterTree(Map<double[], Set<double[]>> cm, Dist<double[]> dist, HierarchicalClusteringType type) {
-		Map<TreeNode,Set<TreeNode>> ncm = samplesCMtoTreeCM(cm);
-		Set<TreeNode> l = getNodes(ncm);
-		return getHierarchicalClusterTree( new ArrayList<>(l), ncm, dist, type);
-	}
 	
 	public static List<TreeNode> getHierarchicalClusterTree( List<TreeNode> leafLayer, Map<TreeNode,Set<TreeNode>> cm, Dist<double[]> dist, HierarchicalClusteringType type ) {
 		return getHierarchicalClusterTree(leafLayer, cm, dist, type, Integer.MAX_VALUE, Math.max(1 , Runtime.getRuntime().availableProcessors() -1 ) );
