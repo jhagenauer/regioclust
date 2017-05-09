@@ -2,6 +2,11 @@
 
 RegioClust is a method that combines hierarchical clustering and linear regression to identify spatial regions with similar relationships 
 
+## Binary Download
+
+A compiled binary of RegioClust can be downloaded [here](https://github.com/jhagenauer/regioclust/releases/download/0.1/RegioClust-0.1.jar). To execute the file, download it and call "java -jar RegioClust-0.1.jar" from the command line.
+
+
 ## Usage
     Usage: <main class> [options]
       Options:
